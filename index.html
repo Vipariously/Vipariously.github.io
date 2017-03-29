@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Syahidah Osman</title>
+		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto">
+		
+		<style>
+		
+			h1.CentredHeading
+			{
+				text-align: center;
+			}
+			p.CentredParagraph
+			{
+				text-align: center;
+			}
+			img.CentredImage
+			{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<br>
+		
+		<h1 class="CentredHeading" style="font-family: Cormorant Garamond, serif; font-size: 48px">Syahidah Osman</h1>
+		
+		<br>
+		
+		<!--Here starts slideshow-->
+		<div>
+		
+			<img class="CentredImage mySlides" src="images/001a.jpg" style="max-height: 540px"></img>
+			<img class="CentredImage mySlides" src="images/002a.jpg" style="max-height: 540px"></img>
+			<img class="CentredImage mySlides" src="images/003.jpg" style="max-height: 540px"></img>
+			<img class="CentredImage mySlides" src="images/004a.jpg" style="max-height: 540px"></img>
+			<img class="CentredImage mySlides" src="images/005a.jpg" style="max-height: 540px"></img>
+			<img class="CentredImage mySlides" src="images/006a.jpg" style="max-height: 540px"></img>
+			<img class="CentredImage mySlides" src="images/007a.jpg" style="max-height: 540px"></img>
+			<img class="CentredImage mySlides" src="images/009a.jpg" style="max-height: 540px"></img>
+			
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() 
+				{
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) 
+					{
+						x[i].style.display = "none";  
+					}
+				
+					myIndex++;
+				
+					if (myIndex > x.length)
+					{
+						myIndex = 1
+					}   
+				
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 2718); 
+				}
+			</script>
+		</div>
+		<!--Here ends slideshow-->
+		
+		<br>
+		
+		<p class="CentredParagraph" style="font-size-adjust: 50%">
+			<a href="works.html" style="text-decoration: none; color: #000; font-family: Roboto, sans-serif">Works |</a>
+			<a href="contact.html" style="text-decoration: none; color: #000; font-family: Roboto, sans-serif">Contact</a>
+		</p>
+	</body>
+</html>
