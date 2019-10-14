@@ -8,11 +8,12 @@
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto">
 	
-		<style>
+		<style type="text/css">
 		
 			h1.CentredHeading
 			{
 				text-align: center;
+				
 			}
 			p.CentredParagraph
 			{
@@ -30,30 +31,98 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
+			
+			#tacoshell
+			{
+				padding: 5px;
+				width: 960px;
+				margin: 20px auto;
+			}
+			
+			#hair
+			{
+				text-align: center;
+				height: 180px;
+				width: 960px;
+			}
+			
+			#tummyleft
+			{
+				width: 450px;
+				text-align: center;
+				float: left;
+			}
+			
+			#tummyright
+			{
+				width: 450px;
+				text-align: left;
+				float: right;
+			}
+			
+			#feet
+			{
+				clear: both;
+			}
+			
+			@media screen and (max-width: 980px)
+			{
+				#tacoshell
+				{
+					width: 94%;
+				}
+			}
+			
+			@media screen and (max-width: 700px)
+			{
+				#tummyleft
+				{
+					width: auto;
+					float: none;
+				}
+				
+				#tummyright
+				{
+					width: auto;
+					float: none;
+					text-align: center;
+				}
+			}
 		</style>
 	</head>
 	
 	<body>
-	
-		<br>
+	<div id="tacoshell">
 	
 		<h1 class="CentredHeading" style="font-family: Cormorant Garamond, serif; font-size: 48px;">The Fillmore Silver Spring Exhibition</h1>
 		
-		<p class="CentredParagraph" style="font-size: 24px; text-decoration: none; color: #000; font-family: Roboto, sans-serif">
+		
+		
+		<br>
+		
+		<div id="tummyleft">
+		<iframe class="CentredMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12403.13193619794!2d-77.027579!3d38.997449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa72db774fb15e9ad!2sThe%20Fillmore%20Silver%20Spring!5e0!3m2!1sen!2ssg!4v1571039712812!5m2!1sen!2ssg" width="430" height="266" frameborder="0" style="border:2px solid #e0e0e0;" allowfullscreen=""></iframe>
+		
+		<br>
+		</div>
+		
+		<div id="tummyright">
+		<p style="font-size: 24px; text-decoration: none; color: #000; font-family: Roboto, sans-serif">
 			<b>Thursday 7-9pm, 24th October 2019</b>
+			<br>
 			<br>
 			<a href="https://RAWartists.org/tickets/purchase/2695/394515" target="_blank" style="text-decoration: none; color: #000; font-family: Roboto, sans-serif"><u>Click HERE for Early Bird tickets</u></a>
 		</p>
+		</div>
 		
 		<br>
 		
-		<iframe class="CentredMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12403.13193619794!2d-77.027579!3d38.997449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa72db774fb15e9ad!2sThe%20Fillmore%20Silver%20Spring!5e0!3m2!1sen!2ssg!4v1571039712812!5m2!1sen!2ssg" width="874" height="540" frameborder="0" style="border:2px solid #e0e0e0;" allowfullscreen=""></iframe>
-		<br>
-		<br>0
-	
+		<div id="feet">
 		<p class="CentredParagraph" style="font-size-adjust: 50%">
 			<a href="index.html" style="text-decoration: none; color: #000; font-family: Roboto, sans-serif">Back</a>
 		</p>
-	
+		</div>
+		
+	</div>
 	</body>
 </html>
